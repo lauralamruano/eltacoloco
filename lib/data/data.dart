@@ -1,4 +1,4 @@
-import 'package:shekinah/models/oferta.dart';
+import 'package:eltacoloco/models/oferta.dart';
 
 List<Oferta> tacos=[
     Oferta(nombre: 'Taco de chorizo y queso', precio: '250', descripcion: 'El taco de chorizo y queso consiste en una tortilla enrollada con queso y chorizo que va cortado en trocitos pequeños. El chorizo se sofrie en un sarten y se le agrega jugo de naranja agria que le da un toque de sabor diferente y natural.', urlImage: 'assets/images/tacochorizo.jpg'),

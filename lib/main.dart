@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:shekinah/ui/colors.dart';
-import 'package:shekinah/ui/home_page.dart';
+import 'package:eltacoloco/ui/colors.dart';
+import 'package:eltacoloco/ui/home_page.dart';
 
 void main() {
   runApp(const App());
@@ -19,9 +19,8 @@ class _AppState extends State<App> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "El taco Loco",
+      title: "El Taco Loco",
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
-      darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
       home: const HomePage(),
     );
   }
