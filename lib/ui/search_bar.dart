@@ -40,11 +40,11 @@ class MySearchDelegate extends SearchDelegate {
           itemBuilder: (context, index) {
             final suggestion = suggestions[index].nombre;
             return ListTile(
-              title: Text(suggestion, style: const TextStyle(
-                color: Colors.white,
-                fontFamily: 'DancingScript',
-                fontSize: 24
-              ),),
+              title: Text(
+                suggestion,
+                style:
+                    TextStyle(color: lightColorScheme.onTertiary,),
+              ),
               onTap: () {
                 query = suggestion;
 

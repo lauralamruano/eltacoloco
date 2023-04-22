@@ -50,11 +50,13 @@ class OfertaWidget extends StatelessWidget {
                 right: 0,
                 child: Container(
                   padding: const EdgeInsets.all(8),
-                  color: Colors.white.withOpacity(0.5),
+                  color: Colors.white.withOpacity(0.6),
                   child: Text(
-                    '${oferta.nombre}: ${oferta.precio}',
-                    style:
-                        TextStyle(color: lightColorScheme.onPrimaryContainer),
+                    '${oferta.nombre}: \$${oferta.precio}',
+                    style: TextStyle(
+                      color: lightColorScheme.onPrimaryContainer,
+                      fontSize: 16,
+                    ),
                   ),
                 ),
               ),

@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           BottomNavigationBarItem(
-            label: "Cafe",
+            label: "Café",
             icon: Icon(
               Icons.coffee_outlined,
             ),

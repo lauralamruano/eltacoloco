@@ -18,7 +18,18 @@ class DetalleOferta extends StatelessWidget {
             SliverAppBar(
               title: Text(
                 oferta.nombre,
-                style: const TextStyle(color: Colors.white),
+                style: TextStyle(
+                  color: lightColorScheme.onTertiary,
+                ),
+              ),
+              leading: IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  color: lightColorScheme.onTertiary,
+                ),
+                onPressed: () {
+                  Navigator.pop(context);
+                },
               ),
               pinned: true,
               expandedHeight: 300,
@@ -39,10 +50,11 @@ class DetalleOferta extends StatelessWidget {
           padding: const EdgeInsets.all(20.0),
           child: Text(
             oferta.descripcion,
-            style: const TextStyle(fontSize: 26,
-              fontFamily:'DancingScript',),
+            style: TextStyle(
+              fontSize: 20,
+              color: lightColorScheme.onTertiary,
+            ),
             textAlign: TextAlign.justify,
-
           ),
         ),
       ),
