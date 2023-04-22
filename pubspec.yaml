@@ -91,6 +91,7 @@ flutter:
     - assets/images/machiato.jpg
     - assets/images/churrorojo.jpg
     - assets/images/churrochocolate.jpg
+    - assets/icons/mainicon.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

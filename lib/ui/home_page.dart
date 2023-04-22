@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shekinah/ui/cafe.dart';
 import 'package:shekinah/ui/churros.dart';
 import 'package:shekinah/ui/colors.dart';
+import 'package:shekinah/ui/info_page.dart';
 import 'package:shekinah/ui/tacos.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:shekinah/ui/search_bar.dart';
@@ -43,7 +44,12 @@ class _HomePageState extends State<HomePage> {
                 showSearch(context: context, delegate: MySearchDelegate());
               },
               icon: const Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
+          IconButton(onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const InfoPage()),
+            );
+          }, icon: const Icon(Icons.info_outline)),
         ],
       ),
       body: pages[selectedPageIndex],
