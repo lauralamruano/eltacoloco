@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shekinah/models/oferta.dart';
-import 'package:shekinah/ui/colors.dart';
+
+import 'package:eltacoloco/models/oferta.dart';
+import 'package:eltacoloco/ui/colors.dart';
 
 import 'detalle_oferta.dart';
 

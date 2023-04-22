@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
-import 'package:shekinah/ui/cafe.dart';
-import 'package:shekinah/ui/churros.dart';
-import 'package:shekinah/ui/colors.dart';
-import 'package:shekinah/ui/tacos.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:shekinah/ui/search_bar.dart';
+
+import 'package:eltacoloco/ui/cafe.dart';
+import 'package:eltacoloco/ui/churros.dart';
+import 'package:eltacoloco/ui/colors.dart';
+import 'package:eltacoloco/ui/tacos.dart';
+import 'package:eltacoloco/ui/search_bar.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);

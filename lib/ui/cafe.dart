@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shekinah/data/data.dart';
-import 'package:shekinah/ui/oferta_widget.dart';
+
+import 'package:eltacoloco/data/data.dart';
+import 'package:eltacoloco/ui/oferta_widget.dart';
 
 
 class Cafe extends StatefulWidget {

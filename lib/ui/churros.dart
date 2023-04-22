@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shekinah/data/data.dart';
-import 'package:shekinah/ui/oferta_widget.dart';
+
+import 'package:eltacoloco/data/data.dart';
+import 'package:eltacoloco/ui/oferta_widget.dart';
 
 class Churro extends StatefulWidget {
   const Churro({Key? key}) : super(key: key);
