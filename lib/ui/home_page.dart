@@ -29,21 +29,30 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: lightColorScheme.tertiary,
+        foregroundColor: lightColorScheme.onTertiary,
         title: const Text(
           "Taquería El Taco Loco",
           style: TextStyle(
             fontSize: 32,
-            color: Colors.white,
             fontFamily: 'DancingScript',
           ),
         ),
         actions: [
           IconButton(
-              onPressed: () {
-                showSearch(context: context, delegate: MySearchDelegate());
-              },
-              icon: const Icon(Icons.search)),
-          IconButton(onPressed: () {}, icon: const Icon(Icons.settings)),
+            onPressed: () {
+              showSearch(
+                context: context,
+                delegate: MySearchDelegate(),
+              );
+            },
+            icon: const Icon(
+              Icons.search,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.settings),
+          ),
         ],
       ),
       body: pages[selectedPageIndex],
@@ -58,7 +67,9 @@ class _HomePageState extends State<HomePage> {
         items: const [
           BottomNavigationBarItem(
               label: "Tacos",
-              icon: Icon(Icons.local_pizza, color: Colors.white70,
+              icon: Icon(
+                Icons.local_pizza,
+                color: Colors.white70,
               )),
           BottomNavigationBarItem(
             label: "Churros",
