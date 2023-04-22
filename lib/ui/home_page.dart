@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:eltacoloco/ui/info_page.dart';
 import 'package:eltacoloco/ui/cafe.dart';
 import 'package:eltacoloco/ui/churros.dart';
 import 'package:eltacoloco/ui/colors.dart';
@@ -41,12 +42,14 @@ class _HomePageState extends State<HomePage> {
                 showSearch(context: context, delegate: MySearchDelegate());
               },
               icon: const Icon(Icons.search)),
-          IconButton(onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const InfoPage()),
-            );
-          }, icon: const Icon(Icons.info_outline)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const InfoPage()),
+                );
+              },
+              icon: const Icon(Icons.info_outline)),
         ],
       ),
       body: pages[selectedPageIndex],

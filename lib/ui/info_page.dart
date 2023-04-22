@@ -15,7 +15,10 @@ class InfoPage extends StatelessWidget {
             leading: GestureDetector(
                 onTap: () => Navigator.of(context).pop(),
                 child: IconButton(
-                  icon: Icon(Icons.arrow_back),
+                  icon: Icon(
+                    Icons.arrow_back,
+                    color: lightColorScheme.onTertiary,
+                  ),
                   onPressed: null,
                 ))),
         body: Container(
