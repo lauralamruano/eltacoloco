@@ -13,16 +13,20 @@ class Churro extends StatefulWidget {
 class _ChurroState extends State<Churro> {
   @override
   Widget build(BuildContext context) {
-    return  GridView.count(
+    return GridView.count(
+      padding: const EdgeInsets.symmetric(
+        horizontal: 8,
+        vertical: 12,
+      ),
       crossAxisCount: 2,
       childAspectRatio: 1,
       crossAxisSpacing: 12,
       mainAxisSpacing: 12,
-
-      children:  churros.map((cafe) {
-      return OfertaWidget(oferta: cafe,);
-
-    }).toList(),
+      children: churros.map((cafe) {
+        return OfertaWidget(
+          oferta: cafe,
+        );
+      }).toList(),
     );
   }
 }

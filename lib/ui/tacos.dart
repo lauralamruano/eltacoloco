@@ -14,14 +14,19 @@ class _TacoState extends State<Taco> {
   @override
   Widget build(BuildContext context) {
     return GridView.count(
-        crossAxisCount: 2,
-        childAspectRatio: 1,
-        crossAxisSpacing: 12,
-        mainAxisSpacing: 12,
-
+      padding: const EdgeInsets.symmetric(
+        horizontal: 8,
+        vertical: 12,
+      ),
+      crossAxisCount: 2,
+      childAspectRatio: 1,
+      crossAxisSpacing: 12,
+      mainAxisSpacing: 12,
       children: tacos.map((cafe) {
-        return OfertaWidget(oferta: cafe,);
-
+        return OfertaWidget(
+          oferta: cafe,
+        );
       }).toList(),
-);}
+    );
+  }
 }

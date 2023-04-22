@@ -21,7 +21,6 @@ class _AppState extends State<App> {
       debugShowCheckedModeBanner: false,
       title: "El Taco Loco",
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
-      darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
       home: const HomePage(),
     );
   }
