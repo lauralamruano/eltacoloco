@@ -63,30 +63,38 @@ class _HomePageState extends State<HomePage> {
             selectedPageIndex = index;
           });
         },
-        items: const [
+        items: [
           BottomNavigationBarItem(
             label: "Tacos",
-            icon: Icon(
-              Icons.local_pizza_outlined,
+            icon: Image.asset(
+              'assets/icons/icons8-taco-100-2.png',
+              height: 32,
             ),
-            activeIcon: Icon(Icons.local_pizza),
+            activeIcon: Image.asset(
+              'assets/icons/icons8-taco-100-3.png',
+              height: 32,
+            ),
           ),
           BottomNavigationBarItem(
             label: "Churros",
-            icon: Icon(
-              Icons.fastfood_outlined,
+            icon: Image.asset(
+              'assets/icons/icons8-burrito-100-3.png',
+              height: 32,
             ),
-            activeIcon: Icon(
-              Icons.fastfood,
+            activeIcon: Image.asset(
+              'assets/icons/icons8-burrito-100-4.png',
+              height: 32,
             ),
           ),
           BottomNavigationBarItem(
             label: "Café",
-            icon: Icon(
-              Icons.coffee_outlined,
+            icon: Image.asset(
+              'assets/icons/icons8-cafe-100-3.png',
+              height: 32,
             ),
-            activeIcon: Icon(
-              Icons.coffee,
+            activeIcon: Image.asset(
+              'assets/icons/icons8-cafe-100-4.png',
+              height: 32,
             ),
           ),
         ],

@@ -64,34 +64,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/images/tacochorizo.jpg
-    - assets/images/tacojamon.jpg
-    - assets/images/tacoqueso.jpg
-    - assets/images/tacopollo.jpg
-    - assets/images/tacovegetales.jpg
-    - assets/images/chilaquilesjamon.jpg
-    - assets/images/chilaquileschorizo.jpg
-    - assets/images/chilaquilespollo.jpg
-    - assets/images/quesadilla.jpg
-    - assets/images/nachos.jpg
-    - assets/images/totopos.jpg
-    - assets/images/machis.jpg
-    - assets/images/expreso.jpg
-    - assets/images/capuchino.jpg
-    - assets/images/frapuchino.jpg
-    - assets/images/cortadito.jpg
-    - assets/images/churrosencillo.jpg
-    - assets/images/churrochocolate1.jpg
-    - assets/images/churrohelado.jpg
-    - assets/images/chocolate.jpg
-    - assets/images/churrorelleno.jpg
-    - assets/images/coldbrews.jpg
-    - assets/images/cafemoca.jpg
-    - assets/images/cafebombon.jpg
-    - assets/images/machiato.jpg
-    - assets/images/churrorojo.jpg
-    - assets/images/churrochocolate.jpg
-    - assets/icons/mainicon.png
+    - assets/icons/
+    - assets/images/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
