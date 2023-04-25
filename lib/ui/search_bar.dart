@@ -20,10 +20,16 @@ class MySearchDelegate extends SearchDelegate {
   }
 
   @override
-  List<Widget>? buildActions(BuildContext context) => [];
-
-  @override
-  Widget buildResults(BuildContext context) => Container();
+  List<Widget>? buildActions(BuildContext context) {
+    return [
+      IconButton(
+        onPressed: () {
+          query = '';
+        },
+        icon: Icon(Icons.close),
+      )
+    ];
+  }
 
   @override
   Widget buildSuggestions(BuildContext context) {
@@ -42,25 +48,50 @@ class MySearchDelegate extends SearchDelegate {
             return ListTile(
               title: Text(
                 suggestion,
-                style:
-                    TextStyle(color: lightColorScheme.onTertiary,),
+                style: TextStyle(
+                  color: lightColorScheme.onTertiary,
+                ),
               ),
               onTap: () {
                 query = suggestion;
 
                 final flag = {};
                 for (final oferta in searchResults) {
-                  final nombreOferta = oferta.nombre;
+                  final nombreOferta = oferta.nombre.toLowerCase();
                   flag[nombreOferta] = oferta;
                 }
                 Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
                         builder: (context) =>
-                            DetalleOferta(oferta: flag[query])));
+                            DetalleOferta(oferta: flag[query.toLowerCase()])));
               },
             );
           }),
     );
+  }
+
+  @override
+  Widget buildResults(BuildContext context) {
+    final flag = {};
+    for (final oferta in searchResults) {
+      final nombreOferta = oferta.nombre.toLowerCase();
+      flag[nombreOferta] = oferta;
+    }
+    if (flag[query] != null) {
+      return DetalleOferta(oferta: flag[query.toLowerCase()]);
+    } else {
+      return Container(
+        color: lightColorScheme.tertiary,
+        child: Center(
+          child: Text(
+            "No hay resultados en la busqueda",
+            style: TextStyle(
+              color: lightColorScheme.onTertiary,
+            ),
+          ),
+        ),
+      );
+    }
   }
 }
