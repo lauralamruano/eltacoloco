@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:eltacoloco/ui/info_page.dart';
 import 'package:eltacoloco/ui/cafe.dart';
 import 'package:eltacoloco/ui/churros.dart';
-import 'package:eltacoloco/ui/colors.dart';
+import 'package:eltacoloco/themes/colors.dart';
 import 'package:eltacoloco/ui/tacos.dart';
 import 'package:eltacoloco/ui/search_bar.dart';
 

@@ -1,6 +1,6 @@
+import 'package:eltacoloco/themes/colors.dart';
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
 
 class InfoPage extends StatelessWidget {
   const InfoPage({super.key});

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:eltacoloco/data/data.dart';
 import 'package:eltacoloco/models/oferta.dart';
-import 'package:eltacoloco/ui/colors.dart';
+import 'package:eltacoloco/themes/colors.dart';
 import 'package:eltacoloco/ui/detalle_oferta.dart';
 
 class MySearchDelegate extends SearchDelegate {

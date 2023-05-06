@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:eltacoloco/models/oferta.dart';
-import 'package:eltacoloco/ui/colors.dart';
+import 'package:eltacoloco/themes/colors.dart';
 
 import 'detalle_oferta.dart';
 

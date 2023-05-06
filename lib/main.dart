@@ -1,9 +1,8 @@
-import 'package:eltacoloco/ui/log%20in.dart';
 import 'package:flutter/material.dart';
 
-import 'package:eltacoloco/ui/colors.dart';
+import 'package:eltacoloco/themes/colors.dart';
 import 'package:eltacoloco/ui/home_page.dart';
-import 'package:eltacoloco/ui/log in.dart';
+import 'package:eltacoloco/ui/log_in.dart';
 
 void main() {
   runApp(const App());
