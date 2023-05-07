@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
         title: const Text(
           "Taquería El Taco Loco",
           style: TextStyle(
-            fontSize: 32,
+            fontSize: 26,
             fontFamily: 'DancingScript',
           ),
         ),

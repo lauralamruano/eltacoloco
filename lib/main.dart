@@ -1,3 +1,4 @@
+import 'package:eltacoloco/ui/bienvenido.dart';
 import 'package:flutter/material.dart';
 
 import 'package:eltacoloco/themes/colors.dart';
@@ -17,8 +18,10 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "El Taco Loco",
       theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
-      initialRoute: "login",
-      routes: { "login": (BuildContext context) => LoginPage(),
+      initialRoute: "bienvenido",
+      routes: {
+        "bienvenido":(BuildContext context)=> Bienvenido(),
+        "login": (BuildContext context) => LoginPage(),
         "home": (BuildContext context) => HomePage(),}
     );
   }
