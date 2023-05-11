@@ -51,7 +51,7 @@ class Bienvenido extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => CreaeCuenta()));
+                      MaterialPageRoute(builder: (context) => CrearCuenta()));
                 },
                 style: ElevatedButton.styleFrom(
                     backgroundColor: lightColorScheme.onTertiary,

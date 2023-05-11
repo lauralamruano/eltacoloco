@@ -30,9 +30,9 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: lightColorScheme.tertiary,
         foregroundColor: lightColorScheme.onTertiary,
         title: const Text(
-          "Taquería El Taco Loco",
+          "El Taco Loco",
           style: TextStyle(
-            fontSize: 26,
+            fontSize: 30,
             fontFamily: 'DancingScript',
           ),
         ),
@@ -49,7 +49,16 @@ class _HomePageState extends State<HomePage> {
                   MaterialPageRoute(builder: (context) => const InfoPage()),
                 );
               },
+              icon: const Icon(Icons.shopping_cart_rounded)),
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const InfoPage()),
+                );
+              },
               icon: const Icon(Icons.info_outline)),
+
         ],
       ),
       body: pages[selectedPageIndex],

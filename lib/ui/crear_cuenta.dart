@@ -1,10 +1,10 @@
-import 'package:eltacoloco/ui/home_page.dart';
+import 'package:eltacoloco/ui/codigo_verificacion.dart';
 import 'package:flutter/material.dart';
 
 import 'package:eltacoloco/themes/colors.dart';
 
-class CreaeCuenta extends StatelessWidget {
-  const CreaeCuenta({Key? key}) : super(key: key);
+class CrearCuenta extends StatelessWidget {
+  const CrearCuenta({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +97,8 @@ Widget password() {
   return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: TextField(
-        keyboardType: TextInputType.emailAddress,
+        keyboardType: TextInputType.visiblePassword,
+        obscureText: true,
         decoration: InputDecoration(
             icon: Icon(
               Icons.lock_clock_outlined,
@@ -110,7 +111,7 @@ Widget password() {
 Widget botonIngresar(BuildContext context) {
   return ElevatedButton(
     onPressed: () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => CodigoConfirmacion()));
     },
     child: Container(
       padding: EdgeInsets.symmetric(horizontal: 80, vertical: 15.0),
